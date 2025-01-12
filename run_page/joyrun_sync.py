@@ -397,7 +397,7 @@ def _generate_svg_profile(athlete, min_grid_distance):
             "run_page/gen_svg.py",
             "--from-db",
             "--title",
-            f"Over {min_grid_distance} Running",
+            f"超过 {min_grid_distance} Running",
             "--type",
             "grid",
             "--athlete",
