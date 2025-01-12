@@ -168,7 +168,7 @@ class Poster:
 
         d.add(
             d.text(
-                self.trans("ATHLETE"),
+                self.trans("运动员"),
                 insert=(10, self.height - 20),
                 fill=text_color,
                 style=header_style,
@@ -185,7 +185,7 @@ class Poster:
 
         d.add(
             d.text(
-                self.trans("SPECIAL TRACKS"),
+                self.trans("特殊数据"),
                 insert=(65, self.height - 20),
                 fill=text_color,
                 style=header_style,
@@ -196,7 +196,7 @@ class Poster:
 
         d.add(
             d.text(
-                f"Over {special_distance1:.1f} km",
+                f"超过 {special_distance1:.1f} km",
                 insert=(70, self.height - 14.5),
                 fill=text_color,
                 style=small_value_style,
@@ -207,7 +207,7 @@ class Poster:
 
         d.add(
             d.text(
-                f"Over {special_distance2:.1f} km",
+                f"超过 {special_distance2:.1f} km",
                 insert=(70, self.height - 10.5),
                 fill=text_color,
                 style=small_value_style,
@@ -216,7 +216,7 @@ class Poster:
 
         d.add(
             d.text(
-                self.trans("STATISTICS"),
+                self.trans("统计数据"),
                 insert=(120, self.height - 20),
                 fill=text_color,
                 style=header_style,
@@ -224,7 +224,7 @@ class Poster:
         )
         d.add(
             d.text(
-                self.trans("Number") + f": {len(self.tracks)}",
+                self.trans("次数") + f": {len(self.tracks)}",
                 insert=(120, self.height - 15),
                 fill=text_color,
                 style=small_value_style,
@@ -232,7 +232,7 @@ class Poster:
         )
         d.add(
             d.text(
-                self.trans("Weekly") + ": " + format_float(len(self.tracks) / weeks),
+                self.trans("每周") + ": " + format_float(len(self.tracks) / weeks),
                 insert=(120, self.height - 10),
                 fill=text_color,
                 style=small_value_style,
@@ -240,7 +240,7 @@ class Poster:
         )
         d.add(
             d.text(
-                self.trans("Total") + ": " + self.format_distance(total_length),
+                self.trans("总里程") + ": " + self.format_distance(total_length),
                 insert=(141, self.height - 15),
                 fill=text_color,
                 style=small_value_style,
@@ -248,7 +248,7 @@ class Poster:
         )
         d.add(
             d.text(
-                self.trans("Avg") + ": " + self.format_distance(average_length),
+                self.trans("平均") + ": " + self.format_distance(average_length),
                 insert=(141, self.height - 10),
                 fill=text_color,
                 style=small_value_style,
@@ -256,7 +256,7 @@ class Poster:
         )
         d.add(
             d.text(
-                self.trans("Min") + ": " + self.format_distance(min_length),
+                self.trans("最短") + ": " + self.format_distance(min_length),
                 insert=(167, self.height - 15),
                 fill=text_color,
                 style=small_value_style,
@@ -264,7 +264,7 @@ class Poster:
         )
         d.add(
             d.text(
-                self.trans("Max") + ": " + self.format_distance(max_length),
+                self.trans("最长") + ": " + self.format_distance(max_length),
                 insert=(167, self.height - 10),
                 fill=text_color,
                 style=small_value_style,

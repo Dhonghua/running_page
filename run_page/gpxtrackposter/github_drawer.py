@@ -19,7 +19,7 @@ class GithubDrawer(TracksDrawer):
 
     def draw(self, dr: svgwrite.Drawing, size: XY, offset: XY):
         if self.poster.tracks is None:
-            raise PosterError("No tracks to draw")
+            raise PosterError("没有可绘制的轨迹")
         year_size = 200 * 4.0 / 80.0
         year_style = f"font-size:{year_size}px; font-family:Arial;"
         year_length_style = f"font-size:{110 * 3.0 / 80.0}px; font-family:Arial;"
@@ -62,18 +62,18 @@ class GithubDrawer(TracksDrawer):
             except Exception as e:
                 print(str(e))
                 month_names = [
-                    "Jan",
-                    "Feb",
-                    "Mar",
-                    "Apr",
-                    "May",
-                    "Jun",
-                    "Jul",
-                    "Aug",
-                    "Sep",
-                    "Oct",
-                    "Nov",
-                    "Dec",
+                    "一月",
+                    "二月",
+                    "三月",
+                    "四月",
+                    "五月",
+                    "六月",
+                    "七月",
+                    "八月",
+                    "九月",
+                    "十月",
+                    "十一月",
+                    "十二月",
                 ]
             km_or_mi = "mi"
             if self.poster.units == "metric":

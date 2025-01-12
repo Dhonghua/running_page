@@ -6,7 +6,7 @@ const YearsStat = ({ year, onClick }: { year: string, onClick: (_year: string) =
   const { years } = useActivities();
   // make sure the year click on front
   let yearsArrayUpdate = years.slice();
-  yearsArrayUpdate.push('Total');
+  yearsArrayUpdate.push('汇总');
   yearsArrayUpdate = yearsArrayUpdate.filter((x) => x !== year);
   yearsArrayUpdate.unshift(year);
 
@@ -24,8 +24,8 @@ const YearsStat = ({ year, onClick }: { year: string, onClick: (_year: string) =
         <YearStat key={year} year={year} onClick={onClick} />
       ))}
       {// eslint-disable-next-line no-prototype-builtins
-        yearsArrayUpdate.hasOwnProperty('Total') ? (
-          <YearStat key="Total" year="Total" onClick={onClick} />
+        yearsArrayUpdate.hasOwnProperty('汇总') ? (
+          <YearStat key="汇总" year="汇总" onClick={onClick} />
         ) : (
           <div />
         )}
