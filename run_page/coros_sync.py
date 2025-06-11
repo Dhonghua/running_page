@@ -174,4 +174,4 @@ if __name__ == "__main__":
     is_only_running = options.only_run
     encrypted_pwd = hashlib.md5(password.encode()).hexdigest()
 
-    asyncio.run(download_and_generate(account, encrypted_pwd))
+    asyncio.run(download_and_generate(account, encrypted_pwd, is_only_running))
