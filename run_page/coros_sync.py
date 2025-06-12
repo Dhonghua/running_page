@@ -128,7 +128,6 @@ async def download_and_generate(account, password, only_run):
     coros = Coros(account, password)
     await coros.init()
 
-    # activity_ids = await coros.fetch_activity_ids()
     activity_ids = await coros.fetch_activity_ids(only_run=only_run)
     print("activity_ids: ", len(activity_ids))
     print("downloaded_ids: ", len(downloaded_ids))
