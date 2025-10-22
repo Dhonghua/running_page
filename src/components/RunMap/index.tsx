@@ -1,4 +1,4 @@
-import MapboxLanguage from '@mapbox/mapbox-gl-language';
+// import MapboxLanguage from '@mapbox/mapbox-gl-language';
 import React, { useRef, useCallback, useState, useEffect } from 'react';
 import Map, {
   Layer,
@@ -80,7 +80,7 @@ const RunMap = ({
       if (ref !== null) {
         const map = ref.getMap();
         if (map && IS_CHINESE) {
-          map.addControl(new MapboxLanguage({ defaultLanguage: 'zh-Hans' }));
+          // map.addControl(new MapboxLanguage({ defaultLanguage: 'zh-Hans' }));
         }
         // all style resources have been downloaded
         // and the first visually complete rendering of the base style has occurred.
