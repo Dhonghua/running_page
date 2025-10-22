@@ -174,7 +174,7 @@ export const SWIMMING_COLOR = 'rgb(255,51,51)';
 export const MAP_TILE_VENDOR = 'maptiler';
 
 // map tiles style name, see MAP_TILE_STYLES for more details
-export const MAP_TILE_STYLE = 'NL-Cartiqo';
+export const MAP_TILE_STYLE = 'winter-dark';
 
 // access token. you can apply a new one, it's free.
 // maptiler: Gt5R0jT8tuIYxW6sNrAg | sign up at https://cloud.maptiler.com/auth/widget
@@ -183,8 +183,6 @@ export const MAP_TILE_ACCESS_TOKEN = 'KFkJqix0EZTJQkGuFjno';
 
 export const MAP_TILE_STYLES = {
   maptiler: {
-    'NL-Cartiqo':
-    'https://api.maptiler.com/maps/nl-cartiqo-topo/style.json?key=',
     'dataviz-dark':
       'https://api.maptiler.com/maps/dataviz-dark/style.json?key=',
     'basic-dark': 'https://api.maptiler.com/maps/basic-v2-dark/style.json?key=',

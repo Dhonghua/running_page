@@ -429,11 +429,7 @@ const getMapStyle = (vendor: string, styleName: string, token: string) => {
   if (!style) {
     return MAP_TILE_STYLES.default;
   }
-  if (vendor === 'maptiler') {
-  return `${style}${token}`;
-}
-  // if (vendor === 'maptiler' || vendor === 'stadiamaps') {
-  if (vendor === 'stadiamaps') {
+  if (vendor === 'maptiler' || vendor === 'stadiamaps') {
     return style + token;
   }
   return style;
