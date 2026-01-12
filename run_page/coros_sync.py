@@ -95,11 +95,11 @@ class Coros:
         return all_activities_ids_types
 
     async def download_activity(self, label_id, sport_type, file_type):
-        if sport_type == 101 and file_type == "gpx":
-            print(
-                f"Sport type {sport_type} is not supported in {file_type} file. The activity will be ignored"
-            )
-            return None, None
+        # if sport_type == 101 and file_type == "gpx":
+        #     print(
+        #         f"Sport type {sport_type} is not supported in {file_type} file. The activity will be ignored"
+        #     )
+        #     return None, None
         download_folder = FOLDER_DICT[file_type]
         download_url = (
             f"{COROS_URL_DICT.get('DOWNLOAD_URL')}?labelId={label_id}&sportType={sport_type}"
