@@ -103,9 +103,9 @@ const RunMap = ({
   //   // This is a valid format but won't be used for actual mapbox requests
   //   return 'pk.eyJ1IjoidW5rbm93biIsImEiOiJjbGZqY2N0d3EwMGNsM3BwN2N4d2N4d2N4In0.unknown';
   // }, []);
-    const mapboxAccessToken = useMemo(() => {
+  const mapboxAccessToken = useMemo(() => {
     return MAPBOX_TOKEN;
-    }, []);
+  }, []);
 
   // Update map when theme changes
   useEffect(() => {

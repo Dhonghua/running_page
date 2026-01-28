@@ -181,7 +181,7 @@ export const PROVINCE_FILL_COLOR = '#47b8e0';
 export const COUNTRY_FILL_COLOR = dark_vanilla;
 
 // Static color constants
-export const RUN_COLOR_LIGHT = '#3397da';  //#47b8e0'
+export const RUN_COLOR_LIGHT = '#3397da'; //#47b8e0'
 export const RUN_COLOR_DARK = MAIN_COLOR;
 
 // Single run animation colors
@@ -240,7 +240,7 @@ export const MAP_TILE_STYLE_DARK = 'dataviz-dark';
 // maptiler: Gt5R0jT8tuIYxW6sNrAg | sign up at https://cloud.maptiler.com/auth/widget
 // stadiamaps: 8a769c5a-9125-4936-bdcf-a6b90cb5d0a4 | sign up at https://client.stadiamaps.com/signup/
 // mapcn: empty
-export const MAP_TILE_ACCESS_TOKEN = '';
+export const MAP_TILE_ACCESS_TOKEN = 'KFkJqix0EZTJQkGuFjno';
 
 export const MAP_TILE_STYLES = {
   mapcn: {
