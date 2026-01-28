@@ -95,14 +95,17 @@ const RunMap = ({
 
   // Mapbox GL JS requires a token even when using other vendors
   // Use actual MAPBOX_TOKEN when vendor is 'mapbox', otherwise use a dummy token
-  const mapboxAccessToken = useMemo(() => {
-    if (MAP_TILE_VENDOR === 'mapbox') {
-      return MAPBOX_TOKEN;
-    }
-    // Use a dummy token for other vendors (Mapbox GL JS still requires a token)
-    // This is a valid format but won't be used for actual mapbox requests
-    return 'pk.eyJ1IjoidW5rbm93biIsImEiOiJjbGZqY2N0d3EwMGNsM3BwN2N4d2N4d2N4In0.unknown';
-  }, []);
+  // const mapboxAccessToken = useMemo(() => {
+  //   if (MAP_TILE_VENDOR === 'mapbox') {
+  //     return MAPBOX_TOKEN;
+  //   }
+  //   // Use a dummy token for other vendors (Mapbox GL JS still requires a token)
+  //   // This is a valid format but won't be used for actual mapbox requests
+  //   return 'pk.eyJ1IjoidW5rbm93biIsImEiOiJjbGZqY2N0d3EwMGNsM3BwN2N4d2N4d2N4In0.unknown';
+  // }, []);
+    const mapboxAccessToken = useMemo(() => {
+    return MAPBOX_TOKEN;
+    }, []);
 
   // Update map when theme changes
   useEffect(() => {
